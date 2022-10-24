@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+
+{char a;
+
+printf("Enter the character you want to check alphabet or not");
+
+scanf("%d",&a);
+
+if(a>='a'&&a<='z' || a>='A'&&a<='Z')
+
+{printf("%d is a alphabet\n");
+
+} else
+
+{ printf ("%d is not a alphabet");
+
+}
+
+return 0;
+
+}
