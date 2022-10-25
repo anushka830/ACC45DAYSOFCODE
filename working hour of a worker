@@ -1,0 +1,53 @@
+#include<stdio.h>
+
+void main()
+
+{ float wh,ep,lp,eh,lh,tp;
+
+printf("enter working hour");
+
+scanf("%f",&wh);
+
+if(wh==8)
+
+{ printf("2500 rs");
+
+}
+
+else if(wh>=1 && wh<8)
+
+{ lh=8-wh;
+
+printf("less working hours %.1f\n",lh);
+
+lp=(2500*5/100)*lh;
+
+printf("less payment %.1f\n",lp);
+
+tp=2500-lp;
+
+printf("total payment %.1f\n",tp);
+
+}
+
+else if (wh>8 && wh<=14)
+
+{ eh=wh-8;
+
+printf("extra working hours %.1f\n",eh);
+
+ep=(2500*5/100)*lh;
+
+printf("extra payment %.1f\n",ep);
+
+tp=2500+ep;
+
+printf("total payment %.1f\n",tp);
+
+}
+
+else
+
+printf("invalid hours");
+
+}
