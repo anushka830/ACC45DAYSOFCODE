@@ -1,0 +1,50 @@
+#include<stdio.h>
+
+void main()
+
+{ int h1,m1,s1,h2,m2,s2,h,m,s,d;
+
+printf("enter hour1");
+
+scanf("%d",&h1);
+
+printf("enter minute1");
+
+scanf("%d",&m1);
+
+printf("enter second1");
+
+scanf("%d",&s1);
+
+printf("enter hour2");
+
+scanf("%d",&h2);
+
+printf("enter minute2");
+
+scanf("%d",&m2);
+
+printf("enter second2");
+
+scanf("%d",&s2);
+
+h=h1+h2;
+
+m=m1+m2;
+
+s=s1+s2;
+
+m=m+(s/60);
+
+s=s%60;
+
+h=h+(m/60);
+
+m=m%60;
+
+d=h/24;
+
+h=h%24;
+
+printf("day(s) %d,%d:%d:%d",d,h,m,s);
+}
