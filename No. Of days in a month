@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+Void main()
+
+{int a;
+
+printf("Enter the month number \n");
+
+scanf("%d", &a);
+
+if(a%2!=0 || a==8 || a==12){
+
+    printf("No. of days in %dth month is 31 ", a);
+
+}
+
+else if (a==2){
+
+    printf("No. of days in %dth month is 28 in normal years and 29 in leap year ", a);
+
+
+}
+
+else{
+
+    printf("Your entered %d month have 30 days  ", a);
+}
+}
