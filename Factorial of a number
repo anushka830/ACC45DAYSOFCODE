@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+Void main()
+
+{int n,m=1,i;
+
+printf("Enter the number you want factorial of \n");
+
+scanf("%d", &n);
+
+for(i=1; i<=n; i++){
+    
+    m = m*i ;
+
+}
+
+printf("Factorial of %d is %d ", n, m) ;
+
+}
