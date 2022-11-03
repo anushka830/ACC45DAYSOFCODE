@@ -1,0 +1,45 @@
+#include<stdio.h>
+
+int main()
+
+{ int i,j,num[30],a,size;
+
+printf("Enter the size of array");
+
+scanf("%d",&size);
+
+printf("Enter the elements in array");
+
+for(i=0;i<size;i++)
+
+{ scanf("%d",&num[i]);
+
+}
+for(i=0;i<size;++i){
+
+for(j=i+1;j<size;++j){
+
+if(num[i]<num[j])
+
+{ a=num[i];
+
+num[i]=num[j];
+
+num[j]=a;
+
+}
+
+}
+
+}
+printf("the descending order is\n");
+
+for(i=0;i<size;i++){
+
+printf("%d\n",num[i]);
+
+}
+
+}
+
+
