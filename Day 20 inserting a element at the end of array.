@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+int main(){
+
+	int n,i,a[100],item;
+
+	printf("Enter the size of array: ");
+
+	scanf("%d",&n);
+
+	printf("Enter ellements: ");
+
+	for(i=0;i<n;i++){
+
+		scanf("%d",&a[i]);
+
+	}
+
+	printf("Insert element in array: ");
+
+	scanf("%d",&item);
+
+	n=n+1;
+
+	a[n-1]=item;
+
+	printf("After insertion element at the end of array: ");
+
+	for(i=0;i<n;i++){
+
+		printf("%d\t",a[i]);
+}
+	return 0;
+}
