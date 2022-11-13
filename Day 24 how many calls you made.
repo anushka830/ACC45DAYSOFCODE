@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+Void main(){
+
+float n;
+
+printf("please enter how many calls you made\n ");
+
+scanf("%f", &n);
+
+printf("250 rupees for mobile services is added in bill\n");
+
+
+n = (n*1.25)+250;
+
+printf("your bill is %f", n);
+
+}
