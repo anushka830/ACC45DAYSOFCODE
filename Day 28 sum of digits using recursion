@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int sod(int);
+
+int main() {
+
+int no,sum;
+
+printf("\n Enter a No.: ");
+
+scanf("%d",&no);
+
+sum = sod(no);
+
+printf("\n Sum of digits of %d is %d",no,sum);
+
+    return 0;
+
+}
+int sod(int m)
+
+{
+if (m < 10)
+
+return m;
+
+else
+
+return ((m%10)+sod(m/10));
+
+}
