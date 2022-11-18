@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+int main()
+
+{ int n,x,arr[100],i,c=0;
+
+printf("enter the size of array");
+
+scanf("%d",&n);
+
+printf("enter the elements which is divisible by 7");
+
+scanf("%d",&x);
+
+printf("enter the elements in array");
+
+for(i=0;i<=n;i++){
+
+scanf("%d",&arr[i]);}
+
+for(i=0;i<=n;i++){
+
+	if(arr[i]%7==0)
+
+	c++;
+}
+
+if(c>=x)
+
+printf("YES...");
+
+else
+
+printf("NO...");
+
+}
