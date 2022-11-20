@@ -1,0 +1,60 @@
+//Sorting the array in ascending order using pointer and also reversing the array 
+//so that we can get the descending order too using pointers
+
+
+#include <stdio.h>
+
+int main()
+{ 
+    int sum=0, arr[50],*p,j,a;
+
+    int i,num;
+
+    p=&arr[0];
+
+    printf("Enter the number of elements in the asrray \n");
+
+    scanf("%d",&num);
+    
+    printf("Enter the elements of the array \n");
+
+    for(i=0; i<num; i++){
+
+        scanf("%d",(p+i));
+
+    }
+    printf("Printing the array\n");
+
+    for(i=0; i<num; i++){
+
+       for(j=i+1; j<num; j++){
+
+           if(*(p+i)>*(p+j)){
+
+               a=*(p+i);
+
+               *(p+i)=*(p+j);
+
+               *(p+j)=a;
+
+           }
+       }
+    }
+    printf("After sorting the array in ascending order \n");
+
+    for(i=0; i<num; i++){
+
+        printf("%d ",*(p+i));
+
+    }
+    printf("\nAfter the reversing the array the array will be in descending order \n");
+    for(i=num-1; i>=0; i--){
+
+        printf("%d ",*(p+i));
+
+    }
+    
+   
+
+    return 0;
+}
