@@ -1,0 +1,38 @@
+#include<stdio.h>
+
+void main()
+
+{ int a[100],n,i,c1=0,c2=0;
+
+printf("enter the size of aray");
+
+scanf("%d",&n);
+
+printf("enter the elements in array");
+
+for(i=0;i<n;i++){
+
+	scanf("%d",&a[i]);
+  
+}
+
+for(i=0;i<n;i++){
+
+	if(a[i]==0){
+  
+		c1++;
+    
+	}
+  
+	else{
+  
+		c2++;
+    
+	}
+  
+}
+printf("0 comes %d times",c1);
+
+printf("1 comes %d times",c2);
+
+}
