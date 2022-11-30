@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+	int n, i, small, position,a[100];
+printf("\nenter the no array: ");
+	scanf("%d", &n);
+    printf("\nInput the array elements:\n ");
+	for(i = 0; i < n; i++) {
+			scanf("%d", &a[i]);
+	}
+	small = a[0];
+	position = 0;
+	for(i = 0; i < n; i++) {
+		if(small > a[i]) {
+			small = a[i];
+			position = i;
+		}
+	}
+	
+	printf("Smallest Value: %d\n", small);
+	printf("Position of the element: %d\n", position);
+	return 0;
+}
