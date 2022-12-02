@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+void main()
+
+{
+
+int arr[10],n,i;
+
+//Declaration of pointer and assigning array to it
+
+int *ptr=arr;
+
+printf("Enter the number of elements:");
+
+scanf("%d",&n);
+
+printf("\nEnter Elements:",n);
+
+for (i=0;i<n;i++)
+
+scanf("%d",&arr[i]);
+
+printf("You entered: \n");
+
+//printing values of array using pointer
+
+for (i=0;i<n;i++)
+
+printf("%d\n",*(ptr+i));
+
+}
